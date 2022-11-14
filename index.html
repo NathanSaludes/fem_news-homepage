@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <title>Frontend Mentor | News homepage</title>
+   <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+   <!-- stylesheets -->
+   <link rel="stylesheet" href="./styles/fonts.css">
+   <link rel="stylesheet" href="./styles/reset.css">
+   <link rel="stylesheet" href="./styles/main.css">
+   <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="margin-bottom">
+         <img class="logo" src="./assets/images/logo.svg" alt="logo">
+         <nav>
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#new">New</a></li>
+               <li><a href="#popular">Popular</a></li>
+               <li><a href="#trending">Trending</a></li>
+               <li><a href="#categories">Categories</a></li>
+            </ul>
+            <div class="hamburger-menu">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section id="section-1">
+            <picture class="hero">
+               <source media="(max-width:375px)" srcset="./assets/images/image-web-3-mobile.jpg">
+               <img src="./assets/images/image-web-3-desktop.jpg" alt="web 3.0">
+            </picture>
+            <h1 class="[ heading ][ headline ]">
+               The Bright Future of Web 3.0?
+            </h1>
+            <div class="[ block ][ container__middle ]">
+               <p>
+                  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+               </p>
+               <a href="#readmore" class="[ button ][ read-more ]" id="">Read More</a>
+            </div>
+            <div class="[ block ][ articles--new ]">
+               <h2 class="heading">New</h2>
+               <div class="articles">
+                  <div class="article">
+                     <a href="#" class="title">Hydrogen VS Electric Cars</a>
+                     <p class="subtitle">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                  </div>
+                  <div class="article">
+                     <a href="#" class="title">The Downsides of AI Artistry</a>
+                     <p class="subtitle">What are the possible adverse effects of on-demand AI image generation?</p>
+                  </div>
+                  <div class="article">
+                     <a href="#" class="title">Is VC Funding Drying Up?</a>
+                     <p class="subtitle">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section>
+            <ol class="articles--list">
+               <!-- article -->
+               <li class="article">
+                  <div class="thumbnail">
+                     <img src="./assets/images/image-retro-pcs.jpg" alt="">
+                  </div>
+                  <div class="details">
+                     <span class="title">Reviving Retro PCs</span>
+                     <div class="subtitle">What happens when old PCs are given modern upgrades?</div>
+                  </div>
+               </li>
+               <!-- article -->
+               <li class="article">
+                  <div class="thumbnail">
+                     <img src="./assets/images/image-top-laptops.jpg" alt="">
+                  </div>
+                  <div class="details">
+                     <span class="title">Top 10 Laptops of 2022</span>
+                     <div class="subtitle">Our best picks for various needs and budgets.</div>
+                  </div>
+               </li>
+               <!-- article -->
+               <li class="article">
+                  <div class="thumbnail">
+                     <img src="./assets/images/image-gaming-growth.jpg" alt="">
+                  </div>
+                  <div class="details">
+                     <span class="title">The Growth of Gaming</span>
+                     <div class="subtitle">How the pandemic has sparked fresh opportunities.</div>
+                  </div>
+               </li>
+            </ol>
+         </section>
+      </main>
+   </div>
+   <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/NathanSaludes">Nathaniel Saludes</a>.
+   </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px) {
+   /* COMPOSITION */
+   #section-1 {
+      grid-template-columns: auto;
+      row-gap: unset;
+      column-gap: unset;
+   }
+
+   /* BLOCK */
+   nav ul {
+      display: none;
+   }
+
+   nav .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 35px;
+      padding: 10px;
+      border-radius: 5px;
+      transform: translateX(10px);
+      transition: all .1s ease-in;
+   }
+
+   .hamburger-menu:hover {
+      background-color: hsla(233, 8%, 79%, 0.365);
+      cursor: pointer;
+   }
+
+   .hamburger-menu span {
+      display: block;
+      height: 4px;
+      width: 100%;
+      background-color: var(--very-dark-blue);
+   }
+
+   .hamburger-menu span:not(:last-child) {
+      margin-bottom: 4px;
+   }
+
+   #section-1>.hero {
+      grid-column: unset;
+      margin-bottom: 30px;
+   }
+
+   #section-1>.headline {
+      grid-column: unset;
+      margin-bottom: 20px;
+   }
+
+   #section-1> :nth-child(3) {
+      grid-column: unset;
+   }
+
+   #section-1> :nth-child(4) {
+      grid-column: unset;
+      grid-row: unset;
+   }
+
+   .button.read-more {
+      margin-top: 20px;
+      margin-bottom: 60px;
+   }
+
+   .articles--list {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 30px;
+   }
+}
+
+@media screen and (max-width: 375px) {
+
+}
