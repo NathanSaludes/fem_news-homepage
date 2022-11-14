@@ -7,8 +7,59 @@
    }
 
    /* BLOCK */
+   nav::before {
+      content: '';
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: var(--very-dark-blue);
+      opacity: .6;
+   }
+
    nav ul {
       display: none;
+      position: fixed;
+      background-color: var(--off-white);
+      flex-direction: column;
+      right: 0;
+      top: 0;
+      width: 200px;
+      height: 100vh;
+      padding: 20px;
+      text-align: left;
+      z-index: 100;
+   }
+
+   nav ul .close-icon {
+      max-width: max-content;
+      padding: 5px;
+      display: block;
+      margin-left: auto;
+      margin-bottom: 80px;
+      cursor: pointer;
+      transition: background-color .1s ease-in-out;
+   }
+
+   nav ul .close-icon:hover {
+      background-color: hsla(233, 8%, 79%, 0.365);
+   }
+
+   nav ul .close-icon img {
+      width: 100%;
+      height: 100%;
+   }
+
+   nav ul li:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   nav ul li a {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--very-dark-blue);
    }
 
    nav .hamburger-menu {
@@ -27,11 +78,8 @@
       cursor: pointer;
    }
 
-   .hamburger-menu span {
-      display: block;
-      height: 4px;
+   .hamburger-menu img {
       width: 100%;
-      background-color: var(--very-dark-blue);
    }
 
    .hamburger-menu span:not(:last-child) {
@@ -66,6 +114,19 @@
       grid-template-columns: 1fr;
       column-gap: 0;
       row-gap: 30px;
+   }
+
+   /* EXCEPTIONS */
+   nav[data-state="active"]::before {
+      display: block;
+   }
+
+   nav[data-state="active"] ul {
+      display: flex;
+   }
+
+   nav[data-state="active"] .hamburger-menu {
+      display: none;
    }
 }
 

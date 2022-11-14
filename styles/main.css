@@ -25,6 +25,7 @@ body {
 p {
    color: var(--dark-grayish-blue);
    line-height: 1.8;
+   font-weight: 400;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
 COMPOSITION
 -------------------------- */
 .wrapper {
-   max-width: 1119px;
+   max-width: 1106px;
    margin-inline: auto;
    padding-inline: 20px;
    /* border-left: 3px dashed #ff00ff4a; */
@@ -51,7 +52,7 @@ header {
 #section-1 {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 307px auto;
+   grid-template-rows: 332px auto;
    column-gap: 30px;
    row-gap: 30px;
    margin-bottom: 70px;
@@ -93,6 +94,10 @@ nav ul {
    display: inline-flex;
    align-content: center;
    gap: 15px;
+}
+
+nav ul .close-icon {
+   display: none;
 }
 
 nav ul li a {
@@ -174,6 +179,10 @@ nav .hamburger-menu {
    margin-bottom: 14px;
 }
 
+.articles--new .article .title:hover {
+   color: var(--primary-orange);
+}
+
 .articles--new .article .subtitle {
    color: var(--grayish-blue);
    opacity: 0.8;
@@ -206,6 +215,7 @@ nav .hamburger-menu {
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
+   align-self: flex-start;
 }
 
 .articles--list .article .title::before {
@@ -226,12 +236,14 @@ nav .hamburger-menu {
    line-height: 1;
 }
 
+.articles--list .article .title:hover {
+   color: var(--primary-red);
+}
+
 .articles--list .article .subtitle {
    line-height: 1.8;
    color: var(--dark-grayish-blue);
 }
-
-
 
 .attribution {
    font-size: 14px;
